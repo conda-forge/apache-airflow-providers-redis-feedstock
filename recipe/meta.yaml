@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-redis" %}
-{% set version = "1.0.1" %}
+{% set version = "2.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-redis-{{ version }}.tar.gz
-  sha256: c74517032682961ed37f0deb97b6dd0b5e7967a3939151ef6cb644a57aa12f22
+  sha256: b69daaf8c9660288a48bca4a78ce9e46d58973580527b84a46ef7db2af3b3582
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - setuptools
     - wheel
   run:
-    - apache-airflow >=2.0.0
+    - apache-airflow >=2.1.0
     - python >=3.6
     - redis-py >=3.2,<3.3
 
