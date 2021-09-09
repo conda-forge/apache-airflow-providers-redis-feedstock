@@ -24,7 +24,7 @@ requirements:
   run:
     - apache-airflow >=2.1.0
     - python >=3.6
-    - redis-py >=3.2,<3.3
+    - redis-py >=3.2,<4
 
 test:
   imports:
