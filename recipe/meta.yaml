@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-redis" %}
-{% set version = "2.0.4" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-redis-{{ version }}.tar.gz
-  sha256: 34aa4ac9d54461c4d80eaefc14f6d5dc6ef6d0922d7854ec8c28757a2de5b82c
+  sha256: 2f4e8353d744ae47f69ed70d86501ed1884002ea698fb75092cedfb69b2b09b5
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - python >=3.7
-    - apache-airflow >=2.1.0
+    - apache-airflow >=2.2.0
     - redis-py >=3.2,<4
 
 test:
@@ -37,7 +37,9 @@ about:
   home: https://airflow.apache.org/
   summary: Provider for Apache Airflow. Implements apache-airflow-providers-redis package
   license: Apache-2.0
-  license_file: LICENSE
+  license_file:
+    - LICENSE
+    - NOTICE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-redis/stable/index.html
   dev_url: https://github.com/apache/airflow/
