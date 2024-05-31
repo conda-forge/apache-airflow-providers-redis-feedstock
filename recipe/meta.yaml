@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-redis" %}
-{% set version = "3.7.0" %}
+{% set version = "3.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_redis-{{ version }}.tar.gz
-  sha256: 9443dc190519c72a3c26eeaacf1cf27fefe70148a4cd3cff0059b3215d2893ea
+  sha256: 4f03a92f6d40c85d0b8491750659fda1fdaf3d51958494411c659267af7e3369
 
 build:
   noarch: python
