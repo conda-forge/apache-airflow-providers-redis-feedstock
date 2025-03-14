@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-redis" %}
-{% set version = "4.0.1" %}
+{% set version = "4.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_redis-{{ version }}.tar.gz
-  sha256: 0f11d6c6d3fa41cee49c6261a2b66d7e0be27a708f209a4e0c14779a12565978
+  sha256: 1c0e4a1382b9ecd3f7d229cdcffc3f240da4aa6755795eae3b4e40361fe2f157
 
 build:
   noarch: python
@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - flit-core ==3.10.1
+    - flit-core ==3.11.0
     - pip
   run:
     - python >={{ python_min }},<4.dev0
