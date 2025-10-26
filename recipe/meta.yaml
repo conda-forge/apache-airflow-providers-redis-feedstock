@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-redis" %}
-{% set version = "4.3.1" %}
+{% set version = "4.3.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_redis-{{ version }}.tar.gz
-  sha256: 9100473d5700e2c3342fb578acd3e18b419ef183aa466001f2b9ee933534209e
+  sha256: 68ddc3376a9ab8f890325af5a31ffbfd024dafaf50aae84a28f8e3d3b19c01ff
 
 build:
   noarch: python
@@ -23,6 +23,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - apache-airflow >=2.10.0
+    - apache-airflow-providers-common-compat >=1.8.0
     - redis-py >=4.5.2,!=4.5.5,!=5.0.2
 
 test:
