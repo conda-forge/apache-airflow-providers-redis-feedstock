@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-redis
-  version: "4.4.5"
+  version: "4.5.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_redis-${{ version }}.tar.gz
-  sha256: a689816103b19ef3dd355c2e577867ddbaefb53dd42b028a18c59ca10682fdb5
+  sha256: 49911147dee4e53b9808614ad8b360bdc665463297327a7604d6a79639d403a2
 
 build:
   noarch: python
